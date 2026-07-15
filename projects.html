@@ -1,10 +1,85 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.querySelector('.nav-toggle');
-  const links = document.querySelector('.nav-links');
-  if (toggle && links) {
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', links.classList.contains('open'));
-    });
-  }
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies — Tiana</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">tiana<span>.</span>pm</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Case Studies</a>
+      <a href="assets/CV.pdf">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section style="padding-top: clamp(2.5rem, 6vw, 4rem);">
+    <span class="eyebrow">Case studies</span>
+    <h1 style="margin: 1.2rem 0 1.5rem; max-width: 20ch;">The decisions, not just the demos.</h1>
+    <p class="lede" style="font-size:1.1rem; max-width: 60ch;">Each case study walks through a real problem, the trade-offs I weighed, and what I'd do differently now. I've tried to leave the messy parts in.</p>
+  </section>
+
+  <section class="border-top">
+    <div class="project-grid">
+
+      <div class="project-card">
+        <span class="num">01</span>
+        <h3>Bar Rota</h3>
+        <p>Solo-built scheduling system for a live venue managing five spaces and a constantly shifting staff roster.</p>
+        <div class="tag-row"><span class="tag">0→1 build</span><span class="tag">Supabase</span><span class="tag">Solo</span></div>
+        <a href="case-studies/bar-rota.html" class="card-link">Read the case study →</a>
+      </div>
+
+      <div class="project-card">
+        <span class="num">02</span>
+        <h3>EEECS Student Hub</h3>
+        <p>Full audit and rebuild of a SharePoint site serving 1,200 students, designed around accessibility for neurodivergent users.</p>
+        <div class="tag-row"><span class="tag">IA & UX</span><span class="tag">Accessibility</span><span class="tag">1,200 users</span></div>
+        <a href="case-studies/sharepoint.html" class="card-link">Read the case study →</a>
+      </div>
+
+      <div class="project-card">
+        <span class="num">03</span>
+        <h3>Studio Cathán</h3>
+        <p>Running a freelance studio: client discovery, brand identity, and web builds for three real, paying clients.</p>
+        <div class="tag-row"><span class="tag">Freelance</span><span class="tag">3 clients</span><span class="tag">Brand + web</span></div>
+        <a href="case-studies/studio-cathan.html" class="card-link">Read the case study →</a>
+      </div>
+
+      <div class="project-card">
+        <span class="num">04</span>
+        <h3>VR Clinical Simulation</h3>
+        <p>Prototype exploring how immersive VR can make high-stakes clinical training scenarios safer to rehearse.</p>
+        <div class="tag-row"><span class="tag">VR/XR</span><span class="tag">Prototype</span><span class="tag">Research</span></div>
+        <a href="case-studies/vr-clinical.html" class="card-link">Read the case study →</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>Belfast, Northern Ireland</span>
+    <div class="footer-links">
+      <a href="contact.html">Get in touch</a>
+      <a href="assets/CV.pdf">Download CV</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
