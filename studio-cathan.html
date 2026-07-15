@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bar Rota — Case Study — Tiana</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">tiana<span>.</span>pm</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../projects.html" class="active">Case Studies</a>
+      <a href="../assets/CV.pdf">CV</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="cs-hero">
+    <span class="eyebrow">Case Study 01</span>
+    <h1>Bar Rota</h1>
+    <p class="lede">A weekly scheduling system for a venue with five spaces and a staff roster that never stopped moving — designed, built, and shipped solo.</p>
+
+    <div class="cs-meta">
+      <div class="meta-item"><span class="k">Role</span><span class="v">Sole builder — product, design & engineering</span></div>
+      <div class="meta-item"><span class="k">Stack</span><span class="v">Supabase (Postgres, Auth, RLS), HTML/CSS/JS, Netlify</span></div>
+      <div class="meta-item"><span class="k">Users</span><span class="v">Bar staff and managers, live weekly use</span></div>
+      <div class="meta-item"><span class="k">Timeframe</span><span class="v">Ongoing</span></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="eyebrow">Problem</span>
+    <h2>Rotas were living in someone's head.</h2>
+    <div class="cs-grid-2">
+      <p>The venue runs multiple spaces that don't all operate every day — a main bar that's always open, plus a second bar, an events space, a pop-up, and kitchen support that come and go depending on what's booked in. Staff availability shifted week to week, and getting a fair, accurate schedule out meant a manager manually cross-referencing who could work where, every single week.</p>
+      <div class="callout">
+        <p>There was no single source of truth. If the person who usually built the rota was off, nobody else could confidently reconstruct it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Decisions</span>
+    <h2>What I chose, and what I gave up</h2>
+    <div class="decision-log">
+      <div class="log-head"><span>bar-rota/decisions.log</span><span>4 entries</span></div>
+      <div class="log-line"><span class="tag decided">decided</span><span class="msg">model the week as Saturday→Friday, matching how the venue actually thinks about its trading week — not the calendar week</span></div>
+      <div class="log-line"><span class="tag decided">decided</span><span class="msg">make secondary venues (Wee Bar, Mandela, Pop-up, Kitchen Porter) toggle on/off per day instead of hard-coding a fixed set of spaces</span></div>
+      <div class="log-line"><span class="tag shipped">shipped</span><span class="msg">separate manager and staff views — staff submit availability, managers publish the rota, swaps sit in their own approval flow</span></div>
+      <div class="log-line"><span class="tag learned">learned</span><span class="msg">row-level security in Supabase does the access-control work I'd otherwise have hand-rolled in the backend</span></div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">User journey</span>
+    <h2>From availability to a published shift</h2>
+    <div class="cs-grid-2">
+      <ul class="plain">
+        <li>Staff log in and submit their availability for the coming trading week</li>
+        <li>Managers see availability against the venues actually open that week and build the rota</li>
+        <li>Staff view their own shifts and can request swaps with colleagues</li>
+        <li>Swap requests go through a lightweight approval flow rather than being silently accepted</li>
+      </ul>
+      <div class="screenshot-frame">
+        <div class="placeholder">Screenshot: weekly rota view (manager.html)<br>— drop in a real screenshot here</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Architecture</span>
+    <h2>Kept deliberately simple</h2>
+    <p style="max-width: 62ch;">No framework, no build step — plain HTML, CSS, and JS talking directly to Supabase for auth, data, and row-level security. Pages: login, availability submission, personal shift view, swap requests, and two manager-only views for scheduling and staff management. The simplicity was a decision, not a limitation: it meant I could ship changes the same day a manager asked for them, without a deploy pipeline in the way.</p>
+    <div class="screenshot-frame" style="margin-top:1.5rem;">
+      <div class="placeholder">Diagram: page map / data flow between login → availability → manager → swaps<br>— drop in a real diagram here</div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Reflection</span>
+    <h2>What I'd do differently</h2>
+    <div class="cs-grid-2">
+      <p>Building this solo, end to end, taught me how much of "product work" is actually just talking to the one manager who has to use this thing every single week and noticing when their answer to "does this work for you?" is polite rather than true.</p>
+      <p>If I rebuilt it now, I'd instrument it from day one — right now I know it's used, but I don't have the data to say how it changed the manager's actual time spent building a rota. That's the gap between "shipped" and "measured," and it's the one I'm most conscious of closing on the next project.</p>
+    </div>
+  </section>
+
+</main>
+
+<div class="cs-nav-footer border-top">
+  <a href="../projects.html">← All case studies</a>
+  <a href="sharepoint.html">Next: EEECS Student Hub →</a>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>Belfast, Northern Ireland</span>
+    <div class="footer-links">
+      <a href="../contact.html">Get in touch</a>
+      <a href="../assets/CV.pdf">Download CV</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EEECS Student Hub — Case Study — Tiana</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">tiana<span>.</span>pm</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../projects.html" class="active">Case Studies</a>
+      <a href="../assets/CV.pdf">CV</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="cs-hero">
+    <span class="eyebrow">Case Study 02</span>
+    <h1>EEECS Student Hub</h1>
+    <p class="lede">A full rebuild of the SharePoint site 1,200 EEECS students rely on — starting from an accessibility brief, not bolting it on at the end.</p>
+
+    <div class="cs-meta">
+      <div class="meta-item"><span class="k">Role</span><span class="v">Lead — audit, IA, rebuild</span></div>
+      <div class="meta-item"><span class="k">Scope</span><span class="v">Full site, page-by-page reconstruction</span></div>
+      <div class="meta-item"><span class="k">Users</span><span class="v">~1,200 EEECS students</span></div>
+      <div class="meta-item"><span class="k">Access level</span><span class="v">Member-level site permissions</span></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="eyebrow">Problem</span>
+    <h2>The site had grown, not been designed.</h2>
+    <div class="cs-grid-2">
+      <p>The EEECS Student Hub had accumulated years of ad-hoc pages, duplicated content, and navigation that reflected whoever last edited it rather than how a student actually looks for information. For most students that's an inconvenience. For neurodivergent students — the group I deliberately centred this rebuild around — inconsistent structure and unclear navigation isn't just frustrating, it's a real barrier to finding what they need.</p>
+      <div class="callout">
+        <p>The brief I set myself: if this site works well for a student who finds unpredictable structure genuinely difficult, it will work well for everyone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Research</span>
+    <h2>Starting with a full audit</h2>
+    <p style="max-width: 62ch;">Before touching a single page, I audited the existing site end to end — every page, every navigation path, every piece of duplicated or orphaned content. That audit became the evidence base for every structural decision that followed, rather than working from assumption about what "good navigation" looks like in the abstract.</p>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Decisions</span>
+    <h2>What changed, and why</h2>
+    <div class="decision-log">
+      <div class="log-head"><span>sharepoint-hub/decisions.log</span><span>4 entries</span></div>
+      <div class="log-line"><span class="tag decided">decided</span><span class="msg">design the navigation hierarchy around predictable, consistent structure — the single biggest lever for neurodivergent usability</span></div>
+      <div class="log-line"><span class="tag decided">decided</span><span class="msg">assign clear content ownership per section so pages stop silently going stale</span></div>
+      <div class="log-line"><span class="tag shipped">shipped</span><span class="msg">rebuilt contact tables and navigation structure across the full site in a single coordinated pass, not a piecemeal patch job</span></div>
+      <div class="log-line"><span class="tag learned">learned</span><span class="msg">accessibility decisions are structural, not cosmetic — they belong in the information architecture, not the styling</span></div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">User journey</span>
+    <h2>From "I can't find it" to "I knew where to look"</h2>
+    <div class="cs-grid-2">
+      <ul class="plain">
+        <li>Mapped every existing page against how students actually described what they were looking for</li>
+        <li>Restructured the navigation into a single, consistent hierarchy — no more parallel nav trees for the same content</li>
+        <li>Rebuilt pages one at a time against that new structure, rather than patching the old one</li>
+        <li>Documented ownership and contact tables so the structure stays maintained after handover</li>
+      </ul>
+      <div class="screenshot-frame">
+        <div class="placeholder">Screenshot: new site navigation structure<br>— drop in a real screenshot here</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Reflection</span>
+    <h2>What this taught me about product decisions</h2>
+    <p style="max-width: 62ch;">Designing for the student who finds inconsistent structure hardest didn't produce a "simplified" or "dumbed down" site — it produced a more disciplined one. Every shortcut I might have taken (a duplicate nav item here, an inconsistent label there) had a real cost for someone, which made the trade-offs impossible to hand-wave. That's the version of accessibility I want to carry into product work generally: not a checklist at the end, but a constraint that makes the whole design better.</p>
+  </section>
+
+</main>
+
+<div class="cs-nav-footer border-top">
+  <a href="bar-rota.html">← Previous: Bar Rota</a>
+  <a href="studio-cathan.html">Next: Studio Cathán →</a>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>Belfast, Northern Ireland</span>
+    <div class="footer-links">
+      <a href="../contact.html">Get in touch</a>
+      <a href="../assets/CV.pdf">Download CV</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

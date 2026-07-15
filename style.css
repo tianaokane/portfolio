@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VR Clinical Simulation — Case Study — Tiana</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">tiana<span>.</span>pm</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../projects.html" class="active">Case Studies</a>
+      <a href="../assets/CV.pdf">CV</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="cs-hero">
+    <span class="eyebrow">Case Study 04</span>
+    <h1>VR Clinical Simulation</h1>
+    <p class="lede">[One-line summary: what the platform simulates, who it's for, and why VR specifically was the right medium.]</p>
+
+    <div class="cs-meta">
+      <div class="meta-item"><span class="k">Role</span><span class="v">[Your role — e.g. researcher, developer, designer]</span></div>
+      <div class="meta-item"><span class="k">Stack</span><span class="v">[Engine / tools used]</span></div>
+      <div class="meta-item"><span class="k">Users</span><span class="v">[Who tested or used it]</span></div>
+      <div class="meta-item"><span class="k">Timeframe</span><span class="v">[Dates]</span></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="eyebrow">Problem</span>
+    <h2>[The gap this project addressed]</h2>
+    <div class="cs-grid-2">
+      <p>[What's hard or risky about the clinical scenario in real life? Why can't people practise it enough currently — cost, safety, access to real patients or equipment?]</p>
+      <div class="callout">
+        <p>[One sharp sentence capturing the core tension — the line you'd want a recruiter to remember.]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Research</span>
+    <h2>[How you understood the problem before building]</h2>
+    <p style="max-width: 62ch;">[Who did you talk to — clinicians, students, supervisors? What did you learn that shaped the design? Any existing tools or literature you looked at?]</p>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Decisions</span>
+    <h2>What I chose, and what I gave up</h2>
+    <div class="decision-log">
+      <div class="log-head"><span>vr-clinical/decisions.log</span><span>edit me</span></div>
+      <div class="log-line"><span class="tag decided">decided</span><span class="msg">[a real trade-off you made — e.g. scope of scenario, fidelity vs. accessibility of hardware]</span></div>
+      <div class="log-line"><span class="tag shipped">shipped</span><span class="msg">[what actually got built / demoed]</span></div>
+      <div class="log-line"><span class="tag learned">learned</span><span class="msg">[something you'd only know from building this specific thing]</span></div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">User journey</span>
+    <h2>[What using the simulation actually looks like]</h2>
+    <div class="cs-grid-2">
+      <ul class="plain">
+        <li>[Step 1 — how a user enters the scenario]</li>
+        <li>[Step 2 — the key decision or action point]</li>
+        <li>[Step 3 — feedback or scoring, if any]</li>
+        <li>[Step 4 — what happens after the session]</li>
+      </ul>
+      <div class="screenshot-frame">
+        <div class="placeholder">Screenshot or short clip of the VR environment<br>— drop in real footage here</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Architecture</span>
+    <h2>[System overview]</h2>
+    <p style="max-width: 62ch;">[Brief technical overview — engine, how scenarios are authored, any backend/data logging involved.]</p>
+    <div class="screenshot-frame" style="margin-top:1.5rem;">
+      <div class="placeholder">System diagram<br>— drop in a real diagram here</div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Reflection</span>
+    <h2>What I'd do differently</h2>
+    <p style="max-width: 62ch;">[Honest reflection — what worked, what you'd change with more time or resources, and what it taught you about designing for a genuinely high-stakes, unfamiliar domain.]</p>
+  </section>
+
+</main>
+
+<div class="cs-nav-footer border-top">
+  <a href="studio-cathan.html">← Previous: Studio Cathán</a>
+  <a href="../projects.html">Back to all case studies</a>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>Belfast, Northern Ireland</span>
+    <div class="footer-links">
+      <a href="../contact.html">Get in touch</a>
+      <a href="../assets/CV.pdf">Download CV</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
