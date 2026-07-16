@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EEECS Student Hub - Case Study - Tiana</title>
+<title>EEECS Student Hub — Case Study — Tiana</title>
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <header class="site-nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Tiana O'Kane</a>
+    <a href="../index.html" class="nav-logo">Tiana O'Kane</a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
     <nav class="nav-links">
       <a href="../index.html">Home</a>
@@ -27,10 +27,10 @@
   <section class="cs-hero">
     <span class="eyebrow">Case Study 02</span>
     <h1>EEECS Student Hub</h1>
-    <p class="lede">A full rebuild of the SharePoint site 1,200 EEECS students rely on - starting from an accessibility brief, not bolting it on at the end.</p>
+    <p class="lede">A full rebuild of the SharePoint site 1,200 EEECS students rely on — starting from an accessibility brief, not bolting it on at the end.</p>
 
     <div class="cs-meta">
-      <div class="meta-item"><span class="k">Role</span><span class="v">Lead - audit, IA, rebuild</span></div>
+      <div class="meta-item"><span class="k">Role</span><span class="v">Lead — audit, IA, rebuild</span></div>
       <div class="meta-item"><span class="k">Scope</span><span class="v">Full site, page-by-page reconstruction</span></div>
       <div class="meta-item"><span class="k">Users</span><span class="v">~1,200 EEECS students</span></div>
       <div class="meta-item"><span class="k">Access level</span><span class="v">Member-level site permissions</span></div>
@@ -41,7 +41,7 @@
     <span class="eyebrow">Problem</span>
     <h2>The site had grown, not been designed.</h2>
     <div class="cs-grid-2">
-      <p>The EEECS Student Hub had accumulated years of ad-hoc pages, duplicated content, and navigation that reflected whoever last edited it rather than how a student actually looks for information. For most students that's an inconvenience. For neurodivergent students - the group I deliberately centred this rebuild around - inconsistent structure and unclear navigation isn't just frustrating, it's a real barrier to finding what they need.</p>
+      <p>The EEECS Student Hub had accumulated years of ad-hoc pages, duplicated content, and navigation that reflected whoever last edited it rather than how a student actually looks for information. For most students that's an inconvenience. For neurodivergent students — the group I deliberately centred this rebuild around — inconsistent structure and unclear navigation isn't just frustrating, it's a real barrier to finding what they need.</p>
       <div class="callout">
         <p>The brief I set myself: if this site works well for a student who finds unpredictable structure genuinely difficult, it will work well for everyone.</p>
       </div>
@@ -51,41 +51,214 @@
   <section class="cs-section border-top">
     <span class="eyebrow">Research</span>
     <h2>Starting with a full audit</h2>
-    <p style="max-width: 62ch;">Before touching a single page, I audited the existing site end to end - every page, every navigation path, every piece of duplicated or orphaned content. That audit became the evidence base for every structural decision that followed, rather than working from assumption about what "good navigation" looks like in the abstract.</p>
+    <p style="max-width: 62ch;">Before touching a single page, I went into the site's page library directly — not just the live navigation, which only shows you what's currently linked. That mattered, because the library told a different story than the front-end did: pages and entire folders that had quietly stopped being part of the site's structure without ever being deleted.</p>
+
+    <div class="screenshot-frame" style="margin: 1.5rem 0;">
+      <svg viewBox="0 0 800 400" style="width:100%; height:auto; display:block;" role="img" aria-label="Six orphaned items — PDFs, a dead link, and pages — scattered and converging into one live navigation structure">
+        <g transform="rotate(-4 160 77)">
+          <rect x="60" y="50" width="200" height="54" rx="20" fill="#8F76B0"/>
+          <text x="160" y="77" text-anchor="middle" dominant-baseline="central" font-family="var(--font-body)" font-size="15" font-weight="600" fill="#FFFFFF">Cyber Documents</text>
+        </g>
+        <g transform="rotate(3 255 122)">
+          <rect x="150" y="95" width="210" height="54" rx="20" fill="#1C6B52"/>
+          <text x="255" y="122" text-anchor="middle" dominant-baseline="central" font-family="var(--font-body)" font-size="15" font-weight="600" fill="#FFFFFF">Orphaned Learning Page</text>
+        </g>
+        <g transform="rotate(-3 150 172)">
+          <rect x="40" y="145" width="220" height="54" rx="20" fill="#8F76B0"/>
+          <text x="150" y="172" text-anchor="middle" dominant-baseline="central" font-family="var(--font-body)" font-size="15" font-weight="600" fill="#FFFFFF">Outdated Student Induction</text>
+        </g>
+        <g transform="rotate(4 280 217)">
+          <rect x="170" y="190" width="220" height="54" rx="20" fill="#AEC2F0"/>
+          <text x="280" y="217" text-anchor="middle" dominant-baseline="central" font-family="var(--font-body)" font-size="15" font-weight="600" fill="#1A2B57">Loose &amp; Broken Page Links</text>
+        </g>
+        <g transform="rotate(-3 155 267)">
+          <rect x="50" y="240" width="210" height="54" rx="20" fill="#1C6B52"/>
+          <text x="155" y="267" text-anchor="middle" dominant-baseline="central" font-family="var(--font-body)" font-size="15" font-weight="600" fill="#FFFFFF">Orphaned Facilities Page</text>
+        </g>
+        <g transform="rotate(2 260 317)">
+          <rect x="150" y="285" width="220" height="64" rx="20" fill="#8F76B0"/>
+          <text x="260" y="308" text-anchor="middle" dominant-baseline="central" font-family="var(--font-body)" font-size="14" font-weight="600" fill="#FFFFFF">Queen's Student</text>
+          <text x="260" y="326" text-anchor="middle" dominant-baseline="central" font-family="var(--font-body)" font-size="14" font-weight="600" fill="#FFFFFF">Desktop Guide</text>
+        </g>
+
+        <line x1="420" y1="195" x2="475" y2="195" stroke="var(--amber)" stroke-width="3"/>
+        <polygon points="475,187 490,195 475,203" fill="var(--amber)"/>
+
+        <rect x="510" y="155" width="240" height="80" rx="16" fill="#1C6B52"/>
+        <text x="630" y="185" text-anchor="middle" dominant-baseline="central" font-family="var(--font-body)" font-size="17" font-weight="600" fill="#FFFFFF">Live navigation</text>
+        <text x="630" y="208" text-anchor="middle" dominant-baseline="central" font-family="var(--font-body)" font-size="14" fill="#FFFFFF">One home per topic</text>
+
+        <g font-family="var(--font-mono)" font-size="11" fill="var(--ink-soft)">
+          <rect x="60" y="365" width="14" height="14" rx="3" fill="#1C6B52"/>
+          <text x="82" y="376">Page</text>
+          <rect x="150" y="365" width="14" height="14" rx="3" fill="#AEC2F0"/>
+          <text x="172" y="376">Link only</text>
+          <rect x="260" y="365" width="14" height="14" rx="3" fill="#8F76B0"/>
+          <text x="282" y="376">PDF</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="callout">
+      <p>The audit turned up six orphaned items sitting outside the live structure — a mix of pages, a dead link, and PDFs, including an outdated cybersecurity document, an old student induction guide, and abandoned Facilities and Learning pages. None had been deleted; they'd simply stopped being linked from anywhere a student would actually click.</p>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Audit findings</span>
+    <h2>What the library revealed</h2>
+    <div class="decision-log">
+      <div class="log-head"><span>sharepoint-hub/audit.log</span><span>4 findings</span></div>
+      <div class="log-line"><span class="tag learned">found</span><span class="msg">six orphaned items in the library — pages, a dead link, and PDFs — including outdated cybersecurity and induction documents, invisible from the live nav</span></div>
+      <div class="log-line"><span class="tag learned">found</span><span class="msg">Wellbeing and Student Voice existed as single, thinly populated pages with no more than one document each</span></div>
+      <div class="log-line"><span class="tag learned">found</span><span class="msg">Student Documents and PGR Student Documents overlapped in purpose, with nothing telling a student which one applied to them</span></div>
+      <div class="log-line"><span class="tag learned">found</span><span class="msg">ownership was scattered across several different staff members with no single point of accountability per section</span></div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Student voice</span>
+    <h2>Too busy to be useful</h2>
+    <div class="cs-grid-2">
+      <p>Alongside the audit, I talked to students directly about how they actually used the old hub. The answer was consistent: it was too busy and too unclear to be worth opening. Most students had quietly stopped using it altogether and asked a friend, a lecturer, or the front office instead — the exact outcome a student hub is supposed to prevent.</p>
+      <div class="callout">
+        <p>The old site wasn't failing because it lacked information. It was failing because nobody could tell, at a glance, where they were supposed to look — or whether they were even in the right place.</p>
+      </div>
+    </div>
+    <p style="max-width: 62ch; margin-top: 1.5rem;">The rebuilt hub is designed to be the first place a student looks, not a last resort. It answers the questions that come up again and again — where to print, who to contact, which lab is actually free to use — and just as importantly, it makes clear which spaces in the Computer Science Building students are welcome to use, and when. No more guessing whether a room is open to you or a locked staff area.</p>
   </section>
 
   <section class="cs-section border-top">
     <span class="eyebrow">Decisions</span>
     <h2>What changed, and why</h2>
     <div class="decision-log">
-      <div class="log-head"><span>sharepoint-hub/decisions.log</span><span>4 entries</span></div>
-      <div class="log-line"><span class="tag decided">decided</span><span class="msg">design the navigation hierarchy around predictable, consistent structure - the single biggest lever for neurodivergent usability</span></div>
+      <div class="log-head"><span>sharepoint-hub/decisions.log</span><span>5 entries</span></div>
+      <div class="log-line"><span class="tag decided">decided</span><span class="msg">design the navigation hierarchy around predictable, consistent structure — the single biggest lever for neurodivergent usability</span></div>
+      <div class="log-line"><span class="tag decided">decided</span><span class="msg">split clumped, monolithic pages (like the old Facilities page) into distinct sections a student could scan and pick from</span></div>
       <div class="log-line"><span class="tag decided">decided</span><span class="msg">assign clear content ownership per section so pages stop silently going stale</span></div>
       <div class="log-line"><span class="tag shipped">shipped</span><span class="msg">rebuilt contact tables and navigation structure across the full site in a single coordinated pass, not a piecemeal patch job</span></div>
-      <div class="log-line"><span class="tag learned">learned</span><span class="msg">accessibility decisions are structural, not cosmetic - they belong in the information architecture, not the styling</span></div>
+      <div class="log-line"><span class="tag learned">learned</span><span class="msg">accessibility decisions are structural, not cosmetic — they belong in the information architecture, not the styling</span></div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Before / after</span>
+    <h2>From a wall of noise to a calm first stop</h2>
+    <div class="cs-grid-2">
+      <div>
+        <p><strong>Before:</strong> the homepage tried to be everything at once — mismatched tiles for Computer Society, Careers & Placement, the Assessment Hub, and Printing, a separate "Student Help & Assistance" sidebar, then a wall of ten identically styled quick-link buttons underneath. Nothing signalled what to look at first.</p>
+        <p><strong>After:</strong> "Welcome to your EEECS Student Hub" opens with four calm categories — Student Life, Get Support, Your Learning, Report an IT Issue — plus one clear "Get things done" shortcut list below. It's not just tidier. It's fewer decisions a student has to make in the first five seconds on the page.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <div class="screenshot-frame" style="padding:0.5rem;">
+          <img src="../assets/screenshots/homepage-old.png" alt="Old homepage: mismatched tiles, a sidebar, and a wall of ten identical quick-link buttons" style="width:100%; border-radius:6px; display:block;">
+          <p class="ts" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.6rem; padding: 0 0.3rem;">Before — mismatched tiles, no clear starting point</p>
+        </div>
+        <div class="screenshot-frame" style="padding:0.5rem;">
+          <img src="../assets/screenshots/homepage-new.png" alt="New homepage: four calm categories and a short get-things-done shortcut list" style="width:100%; border-radius:6px; display:block;">
+          <p class="ts" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.6rem; padding: 0 0.3rem;">After — four categories, one clear shortcut list</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <h2>One clump becomes several clear sections</h2>
+    <div class="cs-grid-2">
+      <div>
+        <p><strong>Before:</strong> Facilities was one long scroll — a hero banner, an opening-hours table, then two solid paragraphs of prose mentioning three computer labs, four Innovation Labs, and a handful of specialist spaces. There was no way to click through to any of them individually; it even carried a like / comment / view-count footer, like a blog post rather than something you'd actually navigate.</p>
+        <p><strong>After:</strong> the opening-hours table stays, because it's the one thing every student needs regardless of anything else. But "Explore Our Facilities" turns that old paragraph into four clickable cards — CSB Computer Labs, Ashby Labs, DKB Lab, Innovation Labs — plus a dedicated "Find Your Way" video section for wayfinding. The paragraph became exactly the things a student needed to click on, not read past.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <div class="screenshot-frame" style="padding:0.5rem;">
+          <img src="../assets/screenshots/facilities-old.png" alt="Old Facilities page: a long scroll of prose with an opening hours table and no clickable sections" style="width:100%; border-radius:6px; display:block;">
+          <p class="ts" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.6rem; padding: 0 0.3rem;">Before — one scrolling page, no clickable sections</p>
+        </div>
+        <div class="screenshot-frame" style="padding:0.5rem;">
+          <img src="../assets/screenshots/facilities-new.png" alt="New Facilities page: a gradient banner, opening hours table, wayfinding video card, and four clickable facility cards" style="width:100%; border-radius:6px; display:block;">
+          <p class="ts" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.6rem; padding: 0 0.3rem;">After — four clickable cards plus a wayfinding video</p>
+        </div>
+      </div>
+    </div>
+    <div class="cs-grid-2" style="margin-top: 2rem;">
+      <div class="screenshot-frame" style="padding:0.5rem;">
+        <img src="../assets/screenshots/school-contacts-old.png" alt="Old School Contacts page: one long scroll mixing office locations, undergraduate, postgraduate taught, and postgraduate research contacts together" style="width:100%; border-radius:6px; display:block;">
+        <p class="ts" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.6rem; padding: 0 0.3rem;">Before — "School Contacts", three audiences on one scroll</p>
+      </div>
+      <div>
+        <p><strong>Before:</strong> "School" was still a near-empty default template — it literally displayed the placeholder text <em>"The comments section will be displayed after page is published,"</em> visible to every student who landed on it. "School Contacts" existed separately, mixing office addresses with undergraduate, postgraduate taught, and postgraduate research enquiries all on one long scroll, with no way to jump straight to the one that applied to you.</p>
+        <p><strong>After:</strong> "Key Contacts at EEECS" replaces both with six clear entry points — Getting in Touch, Find a Staff Member, Student Documents, PGR Documents, University Regulations, and Student Voice — plus a scannable Key Academic Contacts table. A PGR student and an undergraduate now land on entirely different, purpose-built paths instead of scrolling past each other's information.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-frame" style="margin-top: 2rem; padding:0.5rem; max-width: 520px;">
+      <img src="../assets/screenshots/school-contacts-new.png" alt="New Key Contacts at EEECS hub page with six clear entry points" style="width:100%; border-radius:6px; display:block;">
+      <p class="ts" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.6rem; padding: 0 0.3rem;">After — one hub, six purpose-built entry points</p>
     </div>
   </section>
 
   <section class="cs-section border-top">
     <span class="eyebrow">User journey</span>
     <h2>From "I can't find it" to "I knew where to look"</h2>
+    <ul class="plain" style="max-width: 62ch; margin-bottom: 2rem;">
+      <li>Audited the page library directly, not just the live site, to find content nav alone couldn't show</li>
+      <li>Talked to students directly about why the old hub had fallen out of use</li>
+      <li>Restructured the navigation into a single, consistent hierarchy — no more parallel nav trees for the same content</li>
+      <li>Rebuilt pages one at a time against that new structure, splitting clumped pages into distinct sections</li>
+      <li>Documented ownership and contact tables so the structure stays maintained after handover</li>
+    </ul>
+
     <div class="cs-grid-2">
-      <ul class="plain">
-        <li>Mapped every existing page against how students actually described what they were looking for</li>
-        <li>Restructured the navigation into a single, consistent hierarchy - no more parallel nav trees for the same content</li>
-        <li>Rebuilt pages one at a time against that new structure, rather than patching the old one</li>
-        <li>Documented ownership and contact tables so the structure stays maintained after handover</li>
-      </ul>
-      <div class="screenshot-frame">
-        <div class="placeholder">Screenshot: new site navigation structure<br>- drop in a real screenshot here</div>
+      <div class="screenshot-frame" style="padding:0.5rem;">
+        <img src="../assets/screenshots/old-nav-system.png" alt="Old navigation tree: a mix of link-only categories, PDFs, and pages with no consistent structure" style="width:100%; border-radius:6px; display:block;">
+        <p class="ts" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.6rem; padding: 0 0.3rem;">Before — mixed page types, orphaned documents, no consistent depth</p>
       </div>
+      <div class="screenshot-frame" style="padding:0.5rem;">
+        <img src="../assets/screenshots/new-nav-system.png" alt="New navigation tree: six consistent categories, each one level deep, all pages" style="width:100%; border-radius:6px; display:block;">
+        <p class="ts" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); margin-top: 0.6rem; padding: 0 0.3rem;">After — one consistent structure, every item a page, one level deep</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Timeline</span>
+    <h2>Built around a placement, not instead of one</h2>
+    <p style="max-width: 62ch;">This wasn't a dedicated project with ring-fenced time — it ran alongside my normal day-to-day placement work throughout, fitted in between helpdesk tickets and asset inventorying rather than as a single uninterrupted sprint.</p>
+
+    <div class="screenshot-frame" style="margin: 1.5rem 0; padding: 1.5rem;">
+      <svg viewBox="0 0 800 200" style="width:100%; height:auto; display:block;" role="img" aria-label="Timeline: debrief and audit end of May, build through June, finish and handover in July, all alongside daily placement work">
+        <line x1="130" y1="60" x2="670" y2="60" stroke="var(--hairline)" stroke-width="2"/>
+
+        <circle cx="150" cy="60" r="8" fill="#1C6B52"/>
+        <text x="150" y="100" text-anchor="middle" font-family="var(--font-mono)" font-size="12" font-weight="600" fill="var(--ink)">End of May</text>
+        <text x="150" y="118" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--ink-soft)">Debrief &amp; audit</text>
+
+        <circle cx="400" cy="60" r="8" fill="#1C6B52"/>
+        <text x="400" y="100" text-anchor="middle" font-family="var(--font-mono)" font-size="12" font-weight="600" fill="var(--ink)">June</text>
+        <text x="400" y="118" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--ink-soft)">Build</text>
+
+        <circle cx="650" cy="60" r="8" fill="#1C6B52"/>
+        <text x="650" y="100" text-anchor="middle" font-family="var(--font-mono)" font-size="12" font-weight="600" fill="var(--ink)">July</text>
+        <text x="650" y="118" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--ink-soft)">Finish &amp; handover</text>
+
+        <text x="400" y="165" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--ink-soft)">Alongside daily placement work throughout</text>
+      </svg>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">If I could do it again</span>
+    <h2>What I'd change with more room to move</h2>
+    <div class="cs-grid-2">
+      <p>The biggest real-world friction wasn't design or content — it was access. Site permissions all ran through one staff member, and when they went on leave for longer than I had left on placement, waiting simply wasn't an option. I adapted by designing the visual layer externally and working it into SharePoint's default page structures instead — not the plan I started with, but proof that a blocked path is something you can decide your way around rather than a dead end.</p>
+      <p>I'd also like to have gone further with code. SharePoint's built-in web parts cover most of what a rebuild like this needs, but I was curious about actually coding custom components myself — building web parts from scratch with SPFx (SharePoint Framework) rather than assembling from the template library. I didn't have permissions to properly explore it this time, but it's the natural next step if I revisit the site again.</p>
     </div>
   </section>
 
   <section class="cs-section border-top">
     <span class="eyebrow">Reflection</span>
     <h2>What this taught me about product decisions</h2>
-    <p style="max-width: 62ch;">Designing for the student who finds inconsistent structure hardest didn't produce a "simplified" or "dumbed down" site - it produced a more disciplined one. Every shortcut I might have taken (a duplicate nav item here, an inconsistent label there) had a real cost for someone, which made the trade-offs impossible to hand-wave. That's the version of accessibility I want to carry into product work generally: not a checklist at the end, but a constraint that makes the whole design better.</p>
+    <p style="max-width: 62ch;">Designing for the student who finds inconsistent structure hardest didn't produce a "simplified" or "dumbed down" site — it produced a more disciplined one. Every shortcut I might have taken (a duplicate nav item here, an orphaned folder left behind there) had a real cost for someone, which made the trade-offs impossible to hand-wave. That's the version of accessibility I want to carry into product work generally: not a checklist at the end, but a constraint that makes the whole design better.</p>
   </section>
 
 </main>
