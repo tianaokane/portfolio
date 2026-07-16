@@ -35,6 +35,17 @@
       <div class="meta-item"><span class="k">Users</span><span class="v">~1,200 EEECS students</span></div>
       <div class="meta-item"><span class="k">Access level</span><span class="v">Member-level site permissions</span></div>
     </div>
+
+    <div class="callout" style="margin-top: 2rem;">
+      <p style="font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--emerald); margin-bottom: 0.8rem;">Outcome</p>
+      <ul class="plain" style="margin: 0;">
+        <li>Audited [X pages] in the page library directly, not just the live nav</li>
+        <li>Consolidated 2 overlapping contact pages into 6 clear entry points, and 1 clumped Facilities page into 4 clickable lab pages</li>
+        <li>Found and removed 6 orphaned pages and documents that had drifted out of the live structure</li>
+        <li>Rebuilt the navigation as 6 accessibility-first, one-level-deep top categories</li>
+        <li>Positive staff feedback post-launch, structure still in use after handover, with no major redesign required.</li>
+      </ul>
+    </div>
   </section>
 
   <section class="cs-section">
@@ -46,6 +57,29 @@
         <p>The brief I set myself: if this site works well for a student who finds unpredictable structure genuinely difficult, it will work well for everyone.</p>
       </div>
     </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Tools</span>
+    <div class="tag-row">
+      <span class="tag">SharePoint Online</span>
+      <span class="tag">M365</span>
+      <span class="tag">Canva</span>
+      <span class="tag">Microsoft Lists</span>
+      <span class="tag">Excel</span>
+    </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Constraints</span>
+    <h2>What I was actually working with</h2>
+    <ul class="plain" style="max-width: 62ch;">
+      <li>No dedicated project time — this ran alongside daily helpdesk and asset-inventory work, not instead of it</li>
+      <li>Site permissions routed through a single staff member, who went on leave mid-project</li>
+      <li>Content ownership was already scattered across several different staff members before I started</li>
+      <li>Built entirely within SharePoint Online's default tooling — no custom code, by choice at the time</li>
+      <li>~1,200 students still depending on the site staying usable throughout the rebuild, not just after it</li>
+    </ul>
   </section>
 
   <section class="cs-section border-top">
@@ -138,6 +172,13 @@
       <div class="log-line"><span class="tag decided">decided</span><span class="msg">assign clear content ownership per section so pages stop silently going stale</span></div>
       <div class="log-line"><span class="tag shipped">shipped</span><span class="msg">rebuilt contact tables and navigation structure across the full site in a single coordinated pass, not a piecemeal patch job</span></div>
       <div class="log-line"><span class="tag learned">learned</span><span class="msg">accessibility decisions are structural, not cosmetic — they belong in the information architecture, not the styling</span></div>
+    </div>
+
+    <div class="callout" style="margin-top: 1.5rem;">
+      <p><strong>Trade-off:</strong> I considered leaving Facilities as one long page and just rewriting the text more clearly. I rejected that — students don't browse a facilities page like an article, they arrive with one task in mind ("is the CSB open right now", "where's the VR lab"), so the fix had to be structural, not editorial.</p>
+    </div>
+    <div class="callout" style="margin-top: 1rem;">
+      <p><strong>Trade-off:</strong> I considered keeping Student Documents and PGR Student Documents as two pages and just adding clearer labels. I rejected that too — the confusion wasn't about wording, it was that a PGR student and an undergraduate needed entirely different documents. The fix was splitting the audience, not polishing the copy.</p>
     </div>
   </section>
 
@@ -251,8 +292,36 @@
     <h2>What I'd change with more room to move</h2>
     <div class="cs-grid-2">
       <p>The biggest real-world friction wasn't design or content — it was access. Site permissions all ran through one staff member, and when they went on leave for longer than I had left on placement, waiting simply wasn't an option. I adapted by designing the visual layer externally and working it into SharePoint's default page structures instead — not the plan I started with, but proof that a blocked path is something you can decide your way around rather than a dead end.</p>
-      <p>I'd also like to have gone further with code. SharePoint's built-in web parts cover most of what a rebuild like this needs, but I was curious about actually coding custom components myself — building web parts from scratch with SPFx (SharePoint Framework) rather than assembling from the template library. I didn't have permissions to properly explore it this time, but it's the natural next step if I revisit the site again.</p>
+      <p>I'd also like to have gone further with code. SharePoint's built-in web parts cover most of what a rebuild like this needs, but I was curious about actually coding custom components myself — building web parts from scratch with SPFx (SharePoint Framework) rather than assembling from the template library. I didn't have time to properly explore it this time, but it's the natural next step if I revisit the site again.</p>
     </div>
+  </section>
+
+  <section class="cs-section border-top">
+    <span class="eyebrow">Impact</span>
+    <h2>What changed after launch</h2>
+
+    <ul class="plain" style="max-width: 62ch; font-size: 1.05rem;">
+      <li>↓ Routine support queries reduced — students finding answers themselves</li>
+      <li>♦ Especially positive feedback from neurodivergent students</li>
+      <li>◎ Students locating facilities and contacts independently</li>
+      <li>✓ No further redesign needed since launch</li>
+    </ul>
+
+    <h3 style="margin: 2rem 0 1rem;">Staff comments</h3>
+    <p style="max-width: 62ch; margin-bottom: 1.5rem;">The clearest evidence isn't my own read on the redesign — it's what the staff who deal with students every day have noticed since. Both are quoted with their role rather than their name.</p>
+
+    <div class="cs-grid-2">
+      <div class="callout" style="display:flex; flex-direction:column; gap:0.9rem;">
+        <p style="font-style: italic;">"Since the launch of the redesigned Student SharePoint, we have seen a noticeable reduction in routine queries from students, particularly around finding support services, key contacts and IT guidance. Students are now able to locate information more independently, which has reduced repeated enquiries and allowed staff to focus on more complex support needs. Feedback has been especially positive from neurodivergent students, who have reported that the clearer navigation, consistent page layouts and simplified content make the site considerably easier and less overwhelming to use."</p>
+        <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft); font-style: normal;">— Student Support Officer</p>
+      </div>
+      <div class="callout" style="display:flex; flex-direction:column; gap:0.9rem;">
+        <p style="font-style: italic;">"Since the information was brought together in one clear and accessible place, we have seen more students actively engaging with the support available to them. Students appear more confident about contacting lecturers and support staff, and there has also been increased awareness and use of facilities such as the computer labs. Making the guidance easy to find and follow has not reduced engagement; instead, it has helped students understand what support is available, where to go and how to take the next step."</p>
+        <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft); font-style: normal;">— EEECS Clerical &amp; Front Office Worker</p>
+      </div>
+    </div>
+
+    <p style="max-width: 62ch; margin-top: 1.5rem;">There's been no need for a further redesign since launch — the structure has held. I've left behind a maintenance handbook so the site's upkeep doesn't depend on me personally, the same problem the original audit uncovered in the first place.</p>
   </section>
 
   <section class="cs-section border-top">
